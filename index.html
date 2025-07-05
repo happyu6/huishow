@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>辉-演示站</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #fff; color: #333; margin: 0; padding: 0; }
+    .header, .footer { background-color: #FFD700; color: #000; padding: 10px; text-align: center; }
+    .main { display: flex; max-width: 1200px; margin: auto; padding: 10px; }
+    .sidebar { width: 200px; border-right: 1px solid #eee; padding-right: 10px; overflow-y: auto; height: 90vh; position: sticky; top: 0; }
+    .sidebar a { display: block; padding: 8px; color: #333; text-decoration: none; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+    .sidebar a:hover, .sidebar a.active { background-color: #FFD700; color: #000; font-weight: bold; }
+    .content { flex: 1; padding-left: 20px; overflow-y: auto; }
+    .time-search { margin-bottom: 20px; }
+    .time-container { display: flex; gap: 20px; font-size: 16px; margin-bottom: 10px; }
+    .time-container div { padding: 5px 10px; background-color: #f0f0f0; border-radius: 4px; }
+    .search-box { margin-top: 10px; }
+    .search-box input[type="text"] { width: 200px; padding: 5px; border: 1px solid #ccc; border-radius: 4px; }
+    .search-box button { padding: 5px 10px; border: none; background-color: #FFD700; border-radius: 4px; cursor: pointer; }
+    .search-box button:hover { background-color: #FFEC57; }
+    .section { margin-bottom: 20px; }
+    .section h2 {
+      font-size: 18px;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      border: 2px solid #FFD700;
+      border-radius: 6px;
+      display: inline-block;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      user-select: none;
+    }
+    .section h2:hover {
+      border-color: #FFEC57;
+      box-shadow: 0 0 8px 2px rgba(255, 215, 0, 0.6);
+    }
+    .link-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .link-list a {
+      color: #0073e6;
+      text-decoration: none;
+      padding: 5px 10px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .link-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">辉演示站</div>
+  
+  <div class="main">
+    <nav class="sidebar">
+      <a href="#zonghe">综合软件</a>
+      <a href="#aiwenan">AI文案</a>
+      <a href="#aitupian">AI图片</a>
+      <a href="#aishipin">AI视频工具</a>
+      <a href="#aibangong">AI办公工具</a>
+      <a href="#aiyinpin">AI音频工具</a>
+      <a href="#aisousuo">AI搜索引擎</a>
+      <a href="#haiwaishijie">海外社交软件</a>
+      <a href="#guoneipingtai">国内平台</a>
+      <a href="#gugeshichang">谷歌插件</a>
+      <a href="#huoyuan">货源</a>
+      <a href="#aidamoxing">AI大模型</a>
+	  <a href="#xuanpin">电商平台</a>
+      <a href="#qushi">趋势查询</a>
+      <a href="#lianmeng">联盟</a>
+      <a href="#guanjianzi">关键词分析</a>
+      <a href="#tupianziyuan">图片资源</a>
+      <a href="#xinwen">新闻</a>
+      <a href="#yinpinziyuan">音频资源</a>
+      <a href="#shipinziyuan">视频资源</a>
+	  <a href="#ip">ip检测</a>
+	  <a href="#shangbiaozhuanli">商标专利</a>
+    </nav>
+    <div class="content">
+      
+      <!-- 时间与搜索栏 -->
+      <div class="time-search">
+        <div class="time-container">
+          <div>上海时间：<span id="time-shanghai">--:--:--</span></div>
+          <div>美国西部：<span id="time-west">--:--:--</span></div>
+          <div>美国东部：<span id="time-east">--:--:--</span></div>
+        </div>
+        <div class="search-box">
+          <form action="https://www.baidu.com/s" method="get" target="_blank">
+            <input type="text" name="wd" placeholder="在百度搜索…" />
+            <button type="submit">百度一下</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="zonghe" class="section">
+        <h2>综合软件</h2>
+        <div class="link-list">
+		  <a href="https://www.amazon.com/gp/new-releases/" target="_blank">亚马逊新品榜</a>
+          <a href="https://www.amazon.com/gp/bestsellers/" target="_blank">亚马逊销售榜</a>
+          <a href="https://www.ziniao.com/" target="_blank">紫鸟浏览器</a>
+          <a href="https://www.sellersprite.com/" target="_blank">卖家精灵</a>
+          <a href="https://www.lingxing.com/" target="_blank">领星</a>
+          <a href="https://www.sellfox.com/" target="_blank">赛狐</a>
+          <a href="https://www.xiyouzhaoci.com/" target="_blank">西柚找词</a>
+          <a href="https://www.helium10.com/" target="_blank">Helium 10</a>
+          <a href="https://www.sif.com/" target="_blank">SIF</a>
+          <a href="https://www.fakespot.com/" target="_blank">fakespot</a>
+          <a href="https://www.similarweb.com" target="_blank">SimilarWeb</a>
+          <a href="https://linktr.ee" target="_blank">Linktree</a>
+          <a href="https://beacons.ai" target="_blank">Beacons</a>
+          <a href="https://bitly.com/" target="_blank">Bitly</a>
+		  <a href="https://www.amz123.com/tools-hscode/" target="_blank">海关编码</a>
+          <a href="https://www.amz123.com/tools-fbadepot" target="_blank">Fba仓库地址</a>
+          <a href="https://www.amz123.com/tools-fakeidentity" target="_blank">虚拟身份信息</a>
+          <a href="https://www.amz123.com/tools-youbian" target="_blank">邮编</a>
+		  
+		  
+        </div>
+      </div>
+
+      <div id="aiwenan" class="section">
+        <h2>AI文案</h2>
+        <div class="link-list">
+          <a href="https://www.doubao.com/" target="_blank">豆包</a>
+          <a href="https://www.gaoding.com/" target="_blank">搞定设计</a>
+          <a href="https://www.midjourney.com/home" target="_blank">Midjourney</a>
+          <a href="https://www.gaoding.com/ai/writer" target="_blank">稿定AI文案</a>
+          <a href="https://huixie.iflyrec.com/list" target="_blank">讯飞写作</a>
+        </div>
+      </div>
+
+      <div id="aitupian" class="section">
+        <h2>AI图片</h2>
+        <div class="link-list">
+          <a href="https://jimeng.jianying.com/" target="_blank">即梦AI</a>
+          <a href="https://www.liblib.art/" target="_blank">LiblibAI</a>
+          <a href="https://tongyi.aliyun.com/wanxiang" target="_blank">通义万相</a>
+          <a href="https://chacha.so.com/home" target="_blank">360智图</a>
+          <a href="https://app.klingai.com/cn" target="_blank">可灵AI</a>
+          <a href="https://leonardo.ai/" target="_blank">Leonardo</a>
+          <a href="https://designer.microsoft.com/" target="_blank">微软设计</a>
+          <a href="https://yige.baidu.com/" target="_blank">百度AI绘画</a>
+          <a href="https://wenxin.baidu.com/" target="_blank">文心AI写作</a>
+          <a href="https://www.midjourney.com/" target="_blank">midjourney</a>
+          <a href="https://www.canva.com/" target="_blank">canva</a>
+          <a href="https://pc.meitu.com/" target="_blank">美图秀秀</a>
+          <a href="https://www.designkit.com/" target="_blank">美图设计室</a>
+        </div>
+      </div>
+
+      <div id="aishipin" class="section">
+        <h2>AI视频工具</h2>
+        <div class="link-list">
+          <a href="https://jimeng.jianying.com/" target="_blank">即梦AI</a>
+          <a href="https://typemovie.art/" target="_blank">讯飞绘镜</a>
+          <a href="https://tongyi.aliyun.com/wanxiang/wanxvideo" target="_blank">通义万相视频</a>
+          <a href="https://video.hunyuan.tencent.com" target="_blank">腾讯混元AI视频</a>
+          <a href="https://openai.com/sora/" target="_blank">Sora</a>
+          <a href="https://runwayml.com/" target="_blank">Runway</a>
+          <a href="https://hailuoai.com" target="_blank">国内海螺视频</a>
+          <a href="https://hailuoai.video" target="_blank">海外海螺视频</a>
+          <a href="https://www.heygen.com/" target="_blank">HeyGen</a>
+          <a href="https://chatglm.cn/" target="_blank">智谱清影</a>
+          <a href="https://www.veed.io/" target="_blank">Veed.io</a>
+          <a href="https://www.synthesia.io/" target="_blank">Synthesia</a>
+        </div>
+      </div>
+
+      <div id="aibangong" class="section">
+        <h2>AI办公工具</h2>
+        <div class="link-list">
+          <a href="https://www.gaoding.com/templates-ppt" target="_blank">稿定PPT</a>
+          <a href="https://zhiwen.xfyun.cn/home" target="_blank">讯飞智文</a>
+          <a href="https://wenku.baidu.com/ndlaunch/browse/chat" target="_blank">百度文库AI助手</a>
+          <a href="https://www.designkit.com/ppt/" target="_blank">美图AI-PPT</a>
+          <a href="https://chatglm.cn/main/gdetail/" target="_blank">清言PPT</a>
+        </div>
+      </div>
+
+      <div id="aiyinpin" class="section">
+        <h2>AI音频工具</h2>
+        <div class="link-list">
+          <a href="https://www.moyin.com" target="_blank">魔音工坊</a>
+          <a href="https://www.suno.ai" target="_blank">Suno</a>
+          <a href="https://try.elevenlabs.io" target="_blank">elevenlabs</a>
+          <a href="https://www.iflyrec.com/zhuanwenzi.html" target="_blank">讯飞听见</a>
+          <a href="https://ttsmaker.cn/" target="_blank">TTSMaker</a>
+          <a href="https://tianyin.163.com/" target="_blank">网易天音</a>
+          <a href="https://www.tiangong.cn/music" target="_blank">天工SkyMusic</a>
+        </div>
+      </div>
+
+      <div id="aisousuo" class="section">
+        <h2>AI搜索引擎</h2>
+        <div class="link-list">
+          <a href="https://www.quark.cn/" target="_blank">夸克</a>
+          <a href="https://chatgpt.com/?hints=search" target="_blank">Chatgpt</a>
+          <a href="https://zhida.zhihu.com/" target="_blank">知乎直答</a>
+          <a href="https://think.baidu.com/" target="_blank">百度AI探索版</a>
+          <a href="https://so.360.com/" target="_blank">360AI搜索</a>
+          <a href="https://tiangong.cn" target="_blank">天工AI搜索</a>
+        </div>
+      </div>
+
+      <div id="haiwaishijie" class="section">
+        <h2>海外社交软件</h2>
+        <div class="link-list">
+          <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          
+        </div>
+      </div>
+	  
+
+      <div id="guoneipingtai" class="section">
+        <h2>国内平台</h2>
+        <div class="link-list">
+          <a href="https://www.bilibili.com/" target="_blank">B站</a>
+          <a href="https://www.douyin.com/" target="_blank">抖音</a>
+          <a href="https://www.xiaohongshu.com/" target="_blank">小红书</a>
+          <a href="https://www.kuaishou.com/" target="_blank">快手</a>
+          <a href="https://mp.weixin.qq.com/" target="_blank">微信公众号</a>
+          <a href="https://channels.weixin.qq.com/login.html" target="_blank">微信视频号</a>
+        </div>
+      </div>
+
+      <div id="gugeshichang" class="section">
+        <h2>谷歌插件</h2>
+        <div class="link-list">
+          
+        </div>
+      </div>
+
+      <div id="huoyuan" class="section">
+        <h2>货源</h2>
+        <div class="link-list">
+          <a href="https://www.1688.com" target="_blank">1688</a>
+          <a href="https://www.alibaba.com/" target="_blank">阿里国际站</a>
+          <a href="https://www.aliexpress.com/" target="_blank">速卖通</a>
+          <a href="http://www.yiwugou.com/" target="_blank">义乌购</a>
+        </div>
+      </div>
+
+      <div id="aidamoxing" class="section">
+        <h2>AI大模型</h2>
+        <div class="link-list">
+          <a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a>
+        
+        </div>
+      </div>
+        <div id="xuanpin" class="section">
+        <h2>电商平台</h2>
+        <div class="link-list">
+          <a href="https://www.temu.com/" target="_blank">temu</a>
+          <a href="https://www.etsy.com/" target="_blank">etsy</a>
+          <a href="https://www.walmart.com/" target="_blank">walmart</a>
+          <a href="https://www.alibaba.com/" target="_blank">阿里国际站</a>
+          <a href="https://www.aliexpress.com/" target="_blank">速卖通</a>
+		
+        </div>
+      </div>
+      <div id="qushi" class="section">
+        <h2>趋势查询</h2>
+        <div class="link-list">
+          <a href="https://trends.google.com/trends/?geo=US" target="_blank">Google Trends - 谷歌趋势查询</a>
+        </div>
+      </div>
+
+      <div id="lianmeng" class="section">
+        <h2>联盟</h2>
+        <div class="link-list">
+  
+        </div>
+      </div>
+
+      <div id="guanjianzi" class="section">
+        <h2>关键词分析</h2>
+        <div class="link-list">
+          <a href="https://www.semrush.com/" target="_blank">SEMrush</a>
+        </div>
+      </div>
+
+      <div id="tupianziyuan" class="section">
+        <h2>图片资源</h2>
+        <div class="link-list">
+          <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          <a href="https://pixabay.com/" target="_blank">Pixabay</a>
+          <a href="https://www.pexels.com/" target="_blank">Pexels</a>
+          <a href="http://huaban.com/" target="_blank">花瓣网</a>
+          <a href="http://www.nipic.com/" target="_blank">昵图网</a>
+          <a href="https://www.58pic.com/" target="_blank">千图网</a>
+          <a href="https://www.zcool.com.cn/" target="_blank">站酷</a>
+          <a href="https://www.aigei.com/" target="_blank">爱给网</a>
+          <a href="https://www.gaoding.com/" target="_blank">搞定图库</a>
+        </div>
+      </div>
+
+      <div id="xinwen" class="section">
+        <h2>新闻</h2>
+        <div class="link-list">
+          <a href="https://www.toutiao.com/" target="_blank">今日头条</a>
+        </div>
+      </div>
+
+      <div id="shipinziyuan" class="section">
+        <h2>视频资源</h2>
+        <div class="link-list">
+          <a href="https://www.aigei.com/video" target="_blank">爱给网</a>
+          <a href="http://www.nipic.com/shipin" target="_blank">昵图网</a>
+          <a href="https://www.58pic.com/shipin/" target="_blank">千图网</a>
+          <a href="https://www.zcool.com.cn/video/" target="_blank">站酷</a>
+          <a href="https://www.pexels.com/videos" target="_blank">Pexels</a>
+          <a href="https://pixabay.com/videos" target="_blank">Pixabay</a>
+          <a href="https://www.videvo.net/" target="_blank">Videvo</a>
+          <a href="https://mixkit.co" target="_blank">Mixkit</a>
+          <a href="https://www.sucaizn.com/shipin/" target="_blank">素材中国</a>
+          <a href="https://818ps.com/shipin/" target="_blank">图怪兽</a>
+          <a href="https://www.chuangkit.com/shipin" target="_blank">创客贴</a>
+          <a href="https://www.freepik.com/videos" target="_blank">freepik</a>
+        </div>
+      </div>
+
+      <div id="yinpinziyuan" class="section">
+        <h2>音频资源</h2>
+        <div class="link-list">
+          <a href="https://www.aigei.com/" target="_blank">爱给网</a>
+          <a href="https://freesound.org/" target="_blank">Freesound</a>
+          <a href="https://www.bensound.com/" target="_blank">Bensound</a>
+          <a href="https://www.purple-planet.com/" target="_blank">Purple Planet</a>
+          <a href="https://www.soundstripe.com/" target="_blank">Soundstripe</a>
+          <a href="https://www.audioblocks.com/" target="_blank">Audioblocks</a>
+          <a href="https://www.premiumbeat.com/" target="_blank">PremiumBeat</a>
+          <a href="https://www.motin.cloud/" target="_blank">Motin</a>
+          <a href="https://www.podbean.com/" target="_blank">Podbean</a>
+        </div>
+      </div>
+      <div id="ip" class="section">
+        <h2>ip检测</h2>
+        <div class="link-list">
+          <a href="https://www.amz123.com/tools-ip" target="_blank">ip查询</a>
+        </div>
+      </div>
+      <div id="shangbiaozhuanli" class="section">
+        <h2>商标专利</h2>
+        <div class="link-list">
+          <a href="https://sbj.cnipa.gov.cn/sbj/index.html" target="_blank">中国商标局</a>
+
+        </div>
+      </div>
+	  
+
+    </div>
+  </div>
+  
+  <div class="footer">Copyright © 2016-2025 辉</div>
+
+  <script>
+    function updateTimes() {
+      const now = new Date();
+      document.getElementById('time-shanghai').textContent =
+        now.toLocaleTimeString('zh-CN', { timeZone: 'Asia/Shanghai' });
+      document.getElementById('time-west').textContent =
+        now.toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles' });
+      document.getElementById('time-east').textContent =
+        now.toLocaleTimeString('en-US', { timeZone: 'America/New_York' });
+    }
+    updateTimes();
+    setInterval(updateTimes, 1000);
+  </script>
+</body>
+</html>
